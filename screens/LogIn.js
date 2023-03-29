@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 
-export default class App extends React.Component {
+export default class LogIn extends React.Component {
   state={
     email:"",
     password:""
@@ -14,7 +14,6 @@ export default class App extends React.Component {
           <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
-            placeholderTextColor="#31b573"
             onChangeText={text => this.setState({email:text})}/>
         </View>
         <View style={styles.inputView} >
@@ -22,7 +21,6 @@ export default class App extends React.Component {
             secureTextEntry
             style={styles.inputText}
             placeholder="Password..." 
-            placeholderTextColor="#31b573"
             onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity>
@@ -44,19 +42,21 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#003f5c',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   logo:{
     fontWeight:"bold",
     fontSize:50,
-    color:"#fb5b5a",
+    color:"#30E398",
     marginBottom:40
   },
   inputView:{
     width:"80%",
-    backgroundColor:"#465881",
+    backgroundColor:"#fff",
+    borderColor:"#DADAF0",
+    borderWidth:1,
     borderRadius:25,
     height:50,
     marginBottom:20,
@@ -68,12 +68,12 @@ const styles = StyleSheet.create({
     color:"white"
   },
   forgot:{
-    color:"white",
+    color:"#30E398",
     fontSize:11
   },
   loginBtn:{
     width:"80%",
-    backgroundColor:"#fb5b5a",
+    backgroundColor:"#30E398",
     borderRadius:25,
     height:50,
     alignItems:"center",
