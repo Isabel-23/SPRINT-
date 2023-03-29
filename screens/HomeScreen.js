@@ -3,6 +3,7 @@ import React, { useLayoutEffect, useState } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { Mapa, Menu, avatar, Ruta } from '../assets';
 import { Surface } from "@react-native-material/core";
+import LogIn from './LogIn';
 
 const HomeScreen = () => {
 
@@ -35,7 +36,7 @@ const HomeScreen = () => {
             </View>
 
             <View style={styles.avatar} >
-                <TouchableOpacity>
+                <TouchableOpacity  onPress={() => navigation.navigate("Login")}>
                     <Image style={styles.usuario}
                     source={avatar}
                     />
