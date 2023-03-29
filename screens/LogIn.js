@@ -14,7 +14,7 @@ export default class App extends React.Component {
           <TextInput  
             style={styles.inputText}
             placeholder="Email..." 
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#31b573"
             onChangeText={text => this.setState({email:text})}/>
         </View>
         <View style={styles.inputView} >
@@ -22,7 +22,7 @@ export default class App extends React.Component {
             secureTextEntry
             style={styles.inputText}
             placeholder="Password..." 
-            placeholderTextColor="#003f5c"
+            placeholderTextColor="#31b573"
             onChangeText={text => this.setState({password:text})}/>
         </View>
         <TouchableOpacity>
