@@ -1,6 +1,6 @@
 # AVANCES SPRINTS #1 </b> <p>
-## 7. Modulo de Login </b> <p>
-Encargado/a: Elena Islas 
+## 6. Módulo de Registro de Usuario </b> <p>
+Encargado/a: Maria Isabel
 
 
 Descripción: Los usuarios registrados podrán acceder a su cuenta al iniciar sección en la plataforma por medio de un formulario.
