@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# 14. Actualizaciones/Mantenimiento 
+Encargado/a: Maria Isabel
+Descripción: Se realizarán las mejoras propuestas por el equipo las cuales son:
+•	Colocar una barra de navegación para mejorar la accesibilidad a las diferentes pantallas.
+•	Mejorar la validación de datos del usuario
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Proceso
+ 
+### Barra de Navegación
+Para implementar la barra de navegación se utilizó la siguiente dependencia además de ya tener instalado el React- Native-Navigation.
 
-## Available Scripts
+   "@react-navigation/bottom-tabs": "^6.5.7",
 
-In the project directory, you can run:
+Se realizó una modificación completa del código, donde se creó el propio apartado para colocar la barra y que estuviera todo integrado y se pudiera visualizar en las demás pantallas. También se crearon 3 botones diferentes. Los cuales corresponderían a “Home” donde te llevaría a la pantalla principal. El segundo corresponde a “Buscar” donde puedes acceder a la pantalla de mapa, y por último seria la futura pantalla de notificaciones, en la cual se podría visualizar todas las alertas recientes. 
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Autenticación de usuario
+Para la autenticación de usuario se utilizó la plataforma Firebase, que, con sus dependencias ya integradas a la aplicación, se pudo colocar un código que rectificara que los datos ingresados al momento de registrar una cuenta fueran almacenados y guardados en la base de datos. Mostrando en la consola un mensaje de “La cuenta fue creada con éxito”. De igual manera al momento de iniciar sesión con el usuario creado la consola daría alertas dependido si este ingreso con éxito o que los datos de la cuenta no sean correctos
